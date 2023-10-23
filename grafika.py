@@ -109,12 +109,12 @@ class Graphic(object):
                     song.pop(0)
                 for tone in list_of_tones:
                     height = min(tone['duration_to_graphic'] - 2*tone['duration'], self.SIZE[1]-self.SIZE[1]/4)
-                    lenght = tone['duration']
-                    if self.SIZE[1]-self.SIZE[1]/4 < tone['duration'] and height > 0:
+                    lenght = tone['duration'] / (5/4)
+                    if self.SIZE[1]-self.SIZE[1]/4 < lenght + height:
                         lenght = self.SIZE[1] - self.SIZE[1] / 4 - height
                     if height == int(self.SIZE[1]-self.SIZE[1]/4):
                         list_of_tones.remove(tone)
-                    pygame.draw.rect(self.screen, blue, [key_width(tone['note']%12)[0] + (tone['note'] - tone['note']%12 -36)/12 * 7 * self.width, height, key_width(int(tone['note']))[1], lenght/2], 0)
+                    pygame.draw.rect(self.screen, blue, [key_width(tone['note']%12)[0] + (tone['note'] - tone['note']%12 -36)/12 * 7 * self.width, height, key_width(int(tone['note']))[1], lenght], 0)
                     tone['duration_to_graphic'] += 10
                     pygame.display.update()
 
