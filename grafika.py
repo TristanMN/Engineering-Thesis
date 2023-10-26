@@ -51,7 +51,7 @@ class Graphic(object):
         timesynthesia = None
         printing = False
         midi_matrix = main()
-
+        listblack = [0,1,3,4,5]
         song = convert_song(midi_matrix[0])
         list_of_tones = []
 #        song = convert_song(midi_matrix[1])
@@ -86,6 +86,8 @@ class Graphic(object):
 #            pygame.draw.rect(self.screen, (25, 25, 25), [0, 0, self.SIZE[0], self.SIZE[1] - self.SIZE[1] / 4], 0)       #czarne tło
             w = 0
             for i in range(octavs):     #czarne klawisze
+                for n in listblack:
+                    pygame.draw.rect(self.screen, black, [w + (self.width / (4 / 3)) + (n * self.width), self.SIZE[1] - self.SIZE[1] / 4, self.width / 2, self.SIZE[1] / 6], 0)
                 for o in range(7):      #białe klawisze
                     pygame.draw.rect(self.screen, white, [w + 2, self.SIZE[1]-self.SIZE[1]/4 + 2, self.width  - 2, self.SIZE[1]/4], 0)
                     pygame.draw.rect(self.screen, black, [w, self.SIZE[1]-self.SIZE[1]/4, self.width, self.SIZE[1]/4], 2)
