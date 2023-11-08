@@ -3,6 +3,9 @@ import mido
 def main():
     # Open a MIDI file
     midi_file = mido.MidiFile('output.midi')
+    #midi_file = mido.MidiFile('pianinko.midi')
+    #midi_file = mido.MidiFile('Kodaline - All I Want.midi')
+    #midi_file = mido.MidiFile('Tom Odell - Another Love.midi')
 
     # Create an empty list to store MIDI events as a matrix
     midi_matrix = []
@@ -24,10 +27,5 @@ def main():
         midi_matrix.append(track_events)
     print(midi_matrix)
     return midi_matrix
-# Print the resulting MIDI matrix
-# for i, track in enumerate(midi_matrix):
-#     print(f"Track {i + 1}:")
-#     for event in track:
-#         print(event)
 
 main()

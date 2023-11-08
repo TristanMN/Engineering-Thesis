@@ -26,7 +26,7 @@ def main():
             times = np.zeros((len(tons),len(tons)))
             time = 0
 #            while True:
-            while time < 16000:
+            while time < 40*1000:
                 if midi_input.poll():
                     midi_events = midi_input.read(10)
                     note = midi_events[0][0][1]
@@ -39,7 +39,7 @@ def main():
                         times[int(note%12)][int((note - note%12)/12)] = time
                     if ampli == 0:
                         song.append(('note_off', midi_events[0][0][0], note, ampli, time))
-                        print(tons[note%12],int((note - note%12)/12), "Stop", int(time - times[int(note%12)][int((note - note%12)/12)]),"ms")
+                        print(tons[note%12],int((note - note%12)/12), "Stop", int(time - times[int(note%12)][int((note - note%12)/12)]),"ms", time)
         except KeyboardInterrupt:
             pass
     else:
