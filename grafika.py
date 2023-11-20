@@ -167,7 +167,7 @@ class Graphic(object):
                     if lenght + height + 40 < self.SIZE[1]-self.SIZE[1]/4 < lenght + height + 52:
                         tone['have_to_be_pressed'] = True
                         tone['time_to_be_pressed'] = tone['duration_to_graphic']
-                    if tone['have_to_be_pressed'] is True and tone['note'] == note and ((tone['velocity'] > 0 and ampli > 0) or (tone['velocity'] == 0 and ampli == 0)):
+                    if tone['have_to_be_pressed'] is True and tone['note'] == note and ((tone['velocity'] > 0 and ampli > 0) or (tone['velocity'] == 0 and ampli == 0)):    #sprawdzanie kliknięcia | zapisywanie klawisza do listy i szukanie po liście zgadzającego się i pop z listy, jeśli nie ma lub jest inny kliknięty reset combo
                         tone['have_to_be_pressed'] = False
                         combo += 1
                         points = 10 * combo + points
