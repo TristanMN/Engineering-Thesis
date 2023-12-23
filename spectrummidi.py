@@ -1,6 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 import numpy as np
+import matplotlib.pyplot as plt
 import mido
 import fouriertry
 
@@ -35,7 +36,7 @@ for ton in tones:
             break
         i+=1
     ton_index += 1
-print(index_freqs)
+#print(index_freqs)
 print(spec.shape)
 
 #pętla po częstotliwościach tonów:
@@ -51,22 +52,38 @@ print(spec.shape)
 all_tones = np.zeros(len(index_freqs)).astype(list)
 itemp = 0
 song = []
+dBthreshold = 32
 for i in index_freqs:
     list_of_keys = []
     jtemp = 0
     temp_time = 0
-
+    dBtemp = 0
+    dBpasttemp = dBtemp
     for j in range(len(spec[0])):
-        print(spec[i[0]][j],temp_time)
-        if spec[i[0]][j] > 32 and temp_time == 0:
-            song.append(('note_on', 0, itemp+12, 100, int(jtemp*times[1]*1000)))
+        if spec[i[0]][j] > dBthreshold:
+            print(spec[i[0]][j],temp_time, i, jtemp * times[1])
+
+        if dBtemp > spec[i[0]][j] > dBthreshold and dBpasttemp < dBtemp > dBthreshold and temp_time == 0:
+            song.append(('note_on', 0, itemp+12, 100, int((jtemp-1)*times[1]*1000)))
+            list_of_keys.append((i[0], (jtemp - temp_time) * times[1], temp_time * times[1]))
+            temp_time = 1
+            print("VER1")
+        elif dBtemp > spec[i[0]][j] > dBthreshold and dBpasttemp < dBtemp > dBthreshold and temp_time > 0:
+            song.append(('note_on', 0, itemp + 12, 0, int((jtemp-2) * times[1] * 1000)))
+            song.append(('note_on', 0, itemp+12, 100, int((jtemp-1)*times[1]*1000)))
+            list_of_keys.append((i[0], (jtemp - temp_time) * times[1], temp_time * times[1]))
+            temp_time = 1
+            print("VER2")
+        elif dBtemp > spec[i[0]][j] > dBthreshold and temp_time > 0:
             temp_time += 1
-        elif spec[i[0]][j] > 32:
-            temp_time += 1
-        elif spec[i[0]][j] <= 32 and temp_time > 0:
+            print("VER3")
+        elif spec[i[0]][j] <= dBthreshold and temp_time > 0:
             song.append(('note_on', 0, itemp+12, 0, int(jtemp*times[1]*1000)))
             list_of_keys.append((i[0], (jtemp - temp_time) * times[1], temp_time * times[1]))
             temp_time = 0
+            print("VER4")
+        dBpasttemp = dBtemp
+        dBtemp = spec[i[0]][j]
         jtemp += 1
     all_tones[itemp] = list_of_keys
     itemp += 1
