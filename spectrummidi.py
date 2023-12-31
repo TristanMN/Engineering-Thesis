@@ -52,7 +52,9 @@ print(spec.shape)
 all_tones = np.zeros(len(index_freqs)).astype(list)
 itemp = 0
 song = []
-dBthreshold = 32
+dBthreshold = 29
+dBmax = max(max(spec.T, key=max))
+
 for i in index_freqs:
     list_of_keys = []
     jtemp = 0
@@ -60,28 +62,28 @@ for i in index_freqs:
     dBtemp = 0
     dBpasttemp = dBtemp
     for j in range(len(spec[0])):
-        if spec[i[0]][j] > dBthreshold:
-            print(spec[i[0]][j],temp_time, i, jtemp * times[1])
+        if spec[i[0]][j] > dBthreshold/1.5:
+            print(spec[i[0]][j], temp_time, i, jtemp * times[1])
 
         if dBtemp > spec[i[0]][j] > dBthreshold and dBpasttemp < dBtemp > dBthreshold and temp_time == 0:
-            song.append(('note_on', 0, itemp+12, 100, int((jtemp-1)*times[1]*1000)))
+            song.append(('note_on', 0, itemp + 12, 100, int((jtemp-1) * times[1] * 1000)))
             list_of_keys.append((i[0], (jtemp - temp_time) * times[1], temp_time * times[1]))
             temp_time = 1
-            print("VER1")
+            #print("VER1")
         elif dBtemp > spec[i[0]][j] > dBthreshold and dBpasttemp < dBtemp > dBthreshold and temp_time > 0:
             song.append(('note_on', 0, itemp + 12, 0, int((jtemp-2) * times[1] * 1000)))
-            song.append(('note_on', 0, itemp+12, 100, int((jtemp-1)*times[1]*1000)))
+            song.append(('note_on', 0, itemp + 12, 100, int((jtemp-1) * times[1] * 1000)))
             list_of_keys.append((i[0], (jtemp - temp_time) * times[1], temp_time * times[1]))
             temp_time = 1
-            print("VER2")
-        elif dBtemp > spec[i[0]][j] > dBthreshold and temp_time > 0:
+            #print("VER2")
+        elif dBtemp > spec[i[0]][j] > dBthreshold-4 and temp_time > 0:
             temp_time += 1
-            print("VER3")
-        elif spec[i[0]][j] <= dBthreshold and temp_time > 0:
-            song.append(('note_on', 0, itemp+12, 0, int(jtemp*times[1]*1000)))
+            #print("VER3")
+        elif spec[i[0]][j] <= dBthreshold/2 and temp_time > 0:
+            song.append(('note_on', 0, itemp + 12, 0, int(jtemp * times[1] * 1000)))
             list_of_keys.append((i[0], (jtemp - temp_time) * times[1], temp_time * times[1]))
             temp_time = 0
-            print("VER4")
+            #print("VER4")
         dBpasttemp = dBtemp
         dBtemp = spec[i[0]][j]
         jtemp += 1
@@ -96,7 +98,5 @@ for line in song:
     track.append(mido.Message(line[0], channel = 0, note = line[2], velocity = line[3], time = line[4] - temptime))
     temptime = line[4]
 midi_file.tracks.append(track)
-print(track)
 print(len(song))
-print(song)
 midi_file.save('fourier.midi')

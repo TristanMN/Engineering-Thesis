@@ -13,6 +13,7 @@ white = (255,255,255)
 silver = (210,210,210)
 gold = (250,230,150)
 
+
 class Graphic(object):
     def __init__(self):
         display_info = pygame.display.Info()
@@ -54,7 +55,9 @@ class Graphic(object):
         song = convert_song(midi_matrix[0])
         #song = convert_song(midi_matrix[1])
         list_of_tones = []
-        
+        list_of_playing_tones = []
+        fps_clock = pygame.time.Clock()
+
 
         def key_parametrs(note):
             if note%12 == 0:    #C
@@ -101,6 +104,7 @@ class Graphic(object):
                 if input_device_id is None:
                     input_device_id = i
         global midi_input
+        midi_input = None
         if input_device_id is not None:
             midi_input = pygame.midi.Input(input_device_id)
             print(f"Receiving MIDI input from {pygame.midi.get_device_info(input_device_id)[1].decode()}")
@@ -108,7 +112,7 @@ class Graphic(object):
             print("No valid MIDI input devices found.")
             pygame.midi.quit()
 
-        pace = 13
+        pace = 10
 
         while True:     #główna pętla
             if w == 0:
@@ -124,16 +128,26 @@ class Graphic(object):
                         pygame.draw.rect(self.screen, black, [w + (self.width / (4 / 3)) + (n * self.width), self.SIZE[1] - self.SIZE[1] / 4, self.width / 2, self.SIZE[1]/6], 0)
                     w += 7*self.width
 
-            note = None
-            ampli = None
-            if midi_input.poll():
-                midi_events = midi_input.read(10)
-                note = midi_events[0][0][1]
-                ampli = midi_events[0][0][2]
-                time = midi_events[0][1]
+            note = 0
+            ampli = 0
+            try:
+                #if midi_input:
+                if midi_input.poll():
+                    midi_events = midi_input.read(10)
+                    note = int(midi_events[0][0][1])
+                    ampli = int(midi_events[0][0][2])
+                    time = int(midi_events[0][1])
+            except:
+                pass
 
             if printing is False:
                 timesynthesia = int(pygame.time.get_ticks())
+                #podświetlanie trafionego klawisza
+                if ampli > 0 and note not in list_of_playing_tones:
+                    list_of_playing_tones.append((note, timesynthesia))
+                if ampli == 0 and note in list_of_playing_tones:
+                    list_of_playing_tones.remove((note, ))
+                    pygame.draw.rect(self.screen, gold, [key_parametrs(note % 12)[0] + (note - note % 12 - 36) / 12 * 7 * self.width,self.SIZE[1] - self.SIZE[1] / 4,key_parametrs(note)[1],key_parametrs(note)[2]], 0)
             if printing is True:
                 # pygame.draw.rect(self.screen, (25, 25, 25), [0, 0, self.SIZE[0], self.SIZE[1] - self.SIZE[1] / 4], 0)  # czarne tło
                 if len(song) > 0 and int(pygame.time.get_ticks()) - timesynthesia > song[0]['time']:
@@ -141,7 +155,7 @@ class Graphic(object):
                     song.pop(0)
                 for tone in list_of_tones:
                     height = min(tone['duration_to_graphic'] - 2*tone['duration'], self.SIZE[1]-self.SIZE[1]/4)
-                    lenght = tone['duration'] / (5/4)
+                    lenght = tone['duration'] / (15/4)
                     if self.SIZE[1]-self.SIZE[1]/4 < lenght + height:
                         lenght = self.SIZE[1] - self.SIZE[1] / 4 - height
                     #podświetlanie klawisza który powinno się nacisnąć
@@ -164,7 +178,7 @@ class Graphic(object):
                     pygame.draw.rect(self.screen, (25, 25, 25), [key_parametrs(tone['note'] % 12)[0] + (tone['note'] - tone['note'] % 12 - 36) / 12 * 7 * self.width + 10, height + lenght - 10 - pace, key_parametrs(int(tone['note']))[1] - 20, pace], 0)
                     
                     #collecting points
-                    if lenght + height + 40 < self.SIZE[1]-self.SIZE[1]/4 < lenght + height + 52:
+                    if lenght + height + 40 < self.SIZE[1]-self.SIZE[1]/4 < lenght + height + 40 + pace:
                         tone['have_to_be_pressed'] = True
                         tone['time_to_be_pressed'] = tone['duration_to_graphic']
                     if tone['have_to_be_pressed'] is True and tone['note'] == note and ((tone['velocity'] > 0 and ampli > 0) or (tone['velocity'] == 0 and ampli == 0)):    #sprawdzanie kliknięcia | zapisywanie klawisza do listy i szukanie po liście zgadzającego się i pop z listy, jeśli nie ma lub jest inny kliknięty reset combo
@@ -175,7 +189,7 @@ class Graphic(object):
                         pygame.draw.rect(self.screen, gold, [key_parametrs(tone['note'] % 12)[0] + (tone['note'] - tone['note'] % 12 - 36) / 12 * 7 * self.width,self.SIZE[1] - self.SIZE[1] / 4,key_parametrs(int(tone['note']))[1],key_parametrs(int(tone['note']))[2]], 0)
 
                         print(tone['have_to_be_pressed'],tone['note'], note, tone['velocity'], ampli, "COMBO: ", combo, "POINTS: ", points)
-                    if tone['have_to_be_pressed'] == True and 262 > (tone['duration_to_graphic'] - tone['time_to_be_pressed']) > 250:
+                    if tone['have_to_be_pressed'] == True and 250 + pace > (tone['duration_to_graphic'] - tone['time_to_be_pressed']) > 250:
                         combo = 0
                         tone['have_to_be_pressed'] = False
                         print(tone['have_to_be_pressed'],tone['note'], note, tone['velocity'], ampli, "COMBO: ", combo, "POINTS: ", points)
@@ -193,7 +207,7 @@ class Graphic(object):
                     sys.exit()
                 if event.type == pygame.KEYDOWN and event.key == pygame.K_SPACE:
                     printing = True
-
+            fps_clock.tick(15)
             pygame.display.update()
 
         pygame.time.wait(10)

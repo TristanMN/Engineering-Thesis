@@ -9,8 +9,8 @@ import os
 import glob
 import plotly.express as px
 
-
-audio_path = os.path.join(r"E:\Cała muzyka\Muzyka\DJ'ka\Akademik\Disco")
+#audio_path = os.path.join(r"E:\Cała muzyka\Muzyka\DJ'ka\Akademik\Disco")
+audio_path = os.path.join(r"C:\Users\PLTRMAL\OneDrive - ABB\Desktop\VSCode\Engineering-Thesis")
 
 MP3_FILES = glob.glob(pathname=f'{audio_path}/*.mp3', recursive=True)
 #for song in MP3_FILES:
@@ -29,7 +29,7 @@ def transform(song):
     amplitudes = np.abs(spectra)
 
     # Wizualizacja widma amplitudowego
-    fig = px.imshow(amplitudes, x=np.arange(amplitudes.shape[1]), y=np.arange(amplitudes.shape[0]), zmin=0,
+    fig = px.imshow(amplitudes.T, y=np.arange(amplitudes.shape[1]), x=np.arange(amplitudes.shape[0]), zmin=0,
                     aspect='auto')
     fig.update_layout(
         title="Widmo amplitudowe",
@@ -38,5 +38,5 @@ def transform(song):
     )
     fig.show()
 
-audio = audio_path + "\\MANDEE - COCO JAMBO 2016 (org. Mr. President).mp3"
+audio = audio_path + "\\AnothLove.mp3"
 transform(audio)
