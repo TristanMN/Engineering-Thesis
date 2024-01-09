@@ -11,4 +11,4 @@ for line in song:
     track.append(mido.Message(line[0], channel = 0, note = line[2], velocity = line[3], time = line[4] - temptime))
     temptime = line[4]
 midi_file.tracks.append(track)
-midi_file.save('output.midi')
+midi_file.save('say.midi')

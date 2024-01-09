@@ -24,12 +24,11 @@ def main():
         print(f"Receiving MIDI input from {pygame.midi.get_device_info(input_device_id)[1].decode()}")
         try:
             tons = ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"]
-            times_matrix = np.zeros((len(tons),len(tons)))
+            times_matrix = np.zeros((len(tons),10))
             time = pygame.time.get_ticks()
 #            while True:
-            while time < 10*1000:
+            while time < 235*1000:
                 time = pygame.time.get_ticks()
-                print(time)
                 if midi_input.poll():
                     midi_events = midi_input.read(10)
                     note = midi_events[0][0][1]

@@ -19,7 +19,7 @@ output_mp3 = audio_path + "\\fourier.mp3"
 fluidsynth = os.path.join(r"C:\fluidsynthx64\bin\fluidsynth.exe")
 soundfont_file = "C:\ProgramData\soundfonts\Roland SC-55.sf2"
 #soundfont_file = "C:\ProgramData\soundfonts\Gabe the Dog.sf2"
-#soundfont_file = "C:\ProgramData\soundfonts\Super Mario Bros..sf2"
+#soundfont_file = "C:\ProgramData\soundfonts\Super Mario Bros.sf2"
 fs = FluidSynth(soundfont_file)
 
 # Konwersja pliku MIDI na MP3
