@@ -1,0 +1,62 @@
+\documentclass[12pt]{aghdpl}
+% \documentclass[language=en,11pt]{aghdpl}  % praca w języku angielskim
+
+%---------------------------------------------------------------------------
+
+\author{Tristan Malatyński}
+\shortauthor{Tristan Malatyński}
+
+\titlePL{Implementacja gry muzycznej z wykorzystaniem instrumentu klawiszowego i analizy sygnałów dźwiękowych
+}
+
+\titleEN{Implementation of a music game using a keyboard instrument and sound signal analysis}
+
+
+\shorttitlePL{Implementacja gry muzycznej z wykorzystaniem analizy sygnałów dźwiękowych} % skrócona wersja tytułu jeśli jest bardzo długi
+\shorttitleEN{}
+\usepackage{float}
+% Dopuszczalne wartości[1,2]:
+% * "Projekt dyplomowy" - na koniec studiów I stopnia
+% * "Praca dyplomowa" - na koniec studiów II stopnia
+% [1] Zasady dyplomowania w roku akademickim 2020/2021 (Decyzja Dziekana WEAIiIB nr 16/2020 z dnia 9 grudnia 2020 roku)
+% [2] Załącznik nr 1a) do Decyzji nr 16/2020 Dziekana Wydziału EAIiIB z dnia 09 grudnia 2020 r.
+\thesistype{Projekt dyplomowy}
+%\thesistype{Master of Science Thesis}
+
+\supervisor{dr inż. Piotr Pawlik}
+%\supervisor{Paweł Kłeczek, PhD}
+
+\degreeprogramme{Automatyka i Robotyka}
+%\degreeprogramme{Automatics and Robotics}
+
+\date{2024}
+
+%\department{Katedra Informatyki Stosowanej}
+%\department{Department of Applied Computer Science}
+
+\faculty{Wydział Elektrotechniki, Automatyki, Informatyki i Inżynierii Biomedycznej}
+%\faculty{Faculty of Electrical Engineering, Automatics, Computer Science and Biomedical Engineering}
+
+\acknowledgements{Dedykuję tę pracę wszystkim, którzy byli ze mną w chwilach radości i którzy nie pozwolili upaść w chwilach strapienia}
+
+
+\begin{document}
+
+
+	\titlepages
+	\RedefinePlainStyle
+	
+	\setcounter{tocdepth}{2}
+	\tableofcontents
+	\clearpage
+        \include{tex/wstep}
+        \include{tex/podstawy_teoretyczne}
+        \include{tex/projekt_systemu}
+        \include{tex/Implementacja}
+        \include{tex/testy_i_analiza_wynikow}
+        \include{tex/podsumowanie}
+        
+	\printbibliography
+
+\end{document}
+

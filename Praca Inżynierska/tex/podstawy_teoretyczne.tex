@@ -1,0 +1,164 @@
+\chapter{Podstawy teoretyczne}
+\vspace{-25pt}
+\section{Omówienie teorii sygnałów dźwiękowych}
+\subsection{Główne elementy dźwięku}
+
+\textbf{Częstotliwość} odpowiada za wysokość tonu, więc manipulowanie częstotliwością, pozwala na uzyskanie całej gamy melodycznej, a zatem zróżnicowanego brzmienia utworów. Częstotliwość to ilość cykli fali dźwiękowej występujących w jednostce czasu. Podawana w hertzach, gdzie jeden Hz oznacza jeden cykl na sekundę. Dla ludzkiego ucha zakres częstotliwości słyszalnych wynosi zazwyczaj od około 20 Hz do 20 000 Hz (20 kHz). Każdy ton ma ustaloną odpowiednią częstotliwość. Częstotliwość tego samego tonu o oktawę wyższego jest dwukrotnie większa
+
+\begin{table}[H]
+\centering
+\caption{Częstotliwości tonów zaokrąglone do 2 po przecinku \cite{piano_key_frequencies}}
+\label{tab:frequency}
+\begin{tabular}{@{}lrrrrrrrrr@{}}
+\toprule
+Ton/Oktawa & 0    & 1    & 2     & 3      & 4       & 5       & 6        & 7        & 8        \\ \midrule
+C          & 16.35 & 32.7 & 65.41 & 130.81 & 261.63 & 523.25 & 1046.5 & 2093 & 4186 \\
+C\#        & 17.32 & 34.65 & 69.3 & 138.59 & 277.18 & 554.37 & 1108.73 & 2217.46 & 4434.92 \\
+D          & 18.35 & 36.71 & 73.42 & 146.83 & 293.66 & 587.33 & 1174.66 & 2349.32 & 4698.63 \\
+D\#        & 19.45 & 38.89 & 77.78 & 155.56 & 311.13 & 622.25 & 1244.51 & 2489 & 4978 \\
+E          & 20.06 & 41.2 & 82.41 & 164.81 & 329.63 & 659.25 & 1318.51 & 2637 & 5274 \\
+F          & 21.83 & 43.65 & 87.31 & 174.61 & 349.23 & 698.46 & 1396.91 & 2793.83 & 5587.65 \\
+F\#        & 23.12 & 46.25 & 92.5 & 185 & 369.99 & 739.99 & 1479.98 & 2959.96 & 5919.91 \\
+G          & 24.05 & 49 & 98 & 196 & 392 & 783.99 & 1567.98 & 3135.96 & 6271.93 \\
+G\#        & 25.96 & 51.91 & 103.83 & 207.65 & 415.3 & 830.61 & 1661.22 & 3322.44 & 6644.88 \\
+A          & 27.05 & 55 & 110 & 220 & 440 & 880 & 1760 & 3520 & 7040 \\
+A\#        & 29.14 & 58.27 & 116.54 & 233.08 & 466.16 & 932.33 & 1864.66 & 3729.31 & 7458.62 \\
+B          & 30.87 & 61.74 & 123.47 & 246.94 & 493.88 & 987.77 & 1975.53 & 3951 & 7902.13 \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Amplituda} odnosi się do głośności dźwięku. Oznacza to odchylenie wartości dźwięku od stanu spoczynkowego, czyli jak mocno drgają cząsteczki medium (np. powietrza). Mierzona w decybelach, co odnosi się do logarytmicznej skali, gdzie każda zwiększona liczba dB oznacza podwojenie siły dźwięku.
+
+\textbf{Barwa dźwięku} zwana także timbre, odnosi się do charakterystycznej jakości dźwięku, która pozwala odróżnić dźwięki o tej samej wysokości i głośności, ale pochodzące od różnych instrumentów lub źródeł. Zależna od składowych harmonicznych, czyli częstotliwości składników wibracyjnych w dźwięku. Różnice w ilości i intensywności składowych harmonicznych powodują, że te same tony zagrane na różnych instrumentach mają kompletnie różne brzmienie.
+
+\subsection{Synteza dźwięku}
+
+Synteza dźwięku \cite{sound_synthesis} to proces generowania dźwięku, który może być wykonywany na wiele różnych sposobów, zależnie od celu, rodzaju dźwięku i kreatywnych intencji. Ogólnie rzecz biorąc, synteza dźwięku polega na tworzeniu dźwięków od podstaw lub na ich modyfikowaniu, aby osiągnąć pożądane brzmienie. Oto kilka kluczowych aspektów syntezy dźwięku:\\
+
+\noindent\textbf{Generowanie dźwięku}
+
+Synteza może polegać na tworzeniu dźwięku od podstaw przy użyciu oscylatorów, generujących fale dźwiękowe o określonych częstotliwościach i kształtach. Może też opierać się na wykorzystaniu zapisanych dźwięków (próbek) jako źródła generowania dźwięku.\\
+
+\noindent\textbf{Manipulacja parametrami}
+
+Synteza umożliwia modyfikowanie parametrów dźwięku, takich jak wysokość tonu, głośność, kształt fali dźwiękowej, czas trwania czy charakterystyka przestrzenna (panoramowanie). Możliwość kontrolowania tych parametrów pozwala na kształtowanie brzmień i tworzenie różnorodnych dźwięków.\\
+
+\noindent\textbf{Tworzenie różnorodnych brzmień}
+
+Dzięki różnym technikom syntezy możliwe jest generowanie różnorodnych brzmień, od prostych tonów po złożone struktury dźwiękowe. Niektóre metody syntezy pozwalają na realistyczne emulacje instrumentów muzycznych, podczas gdy inne skupiają się na tworzeniu bardziej abstrakcyjnych i eksperymentalnych dźwięków.\\
+
+\noindent\textbf{Wykorzystanie w produkcji muzycznej}
+
+Synteza dźwięku jest szeroko stosowana w produkcji muzycznej, w syntezatorach, samplerach, programach do tworzenia muzyki elektronicznej oraz w aplikacjach do postprodukcji dźwięku. Oparta jest na manipulacji parametrów dźwięku lub wykorzystaniu istniejących dźwięków do tworzenia nowych brzmień, co daje twórcom szerokie możliwości eksperymentowania i kreowania unikalnych dźwięków.\\
+
+\noindent\textbf{Rodzaje syntez}
+
+• Synteza Subtraktywna:
+Metoda oparta na filtracji i modelowaniu harmonicznych elementów dźwięku.
+Generuje dźwięk poprzez usuwanie (subtrakcję) części harmonicznych z bogatszego sygnału źródłowego.\\
+
+• Synteza Addytywna:
+Generowanie dźwięku przez sumowanie wielu prostych fal sinusoidalnych o różnych częstotliwościach i amplitudach.
+Tworzone brzmienia są bardziej złożone ze względu na dodawanie wielu harmonicznych składowych.\\
+
+
+• Synteza FM (Frequency Modulation):
+Technika syntezy, w której jedna fala moduluje częstotliwość kolejnej fali harmonicznej, co generuje barwne i bogate brzmienie.
+Oparta na zmianie częstotliwości nośnej poprzez sygnał modulatora.\\
+
+
+• Synteza Granularna:
+Opiera się na manipulacji i kombinowaniu mikroskopijnych fragmentów dźwięku zwanych ziarnami.
+Dźwięk jest generowany poprzez sekwencyjne odtwarzanie, modyfikację i łączenie krótkich fragmentów dźwiękowych.\\
+
+• Synteza Wavetable:
+Wykorzystuje gotowe cyfrowe tabelki (wavetable) jako źródło dźwięku.
+Generuje dźwięk poprzez odtwarzanie cyfrowych próbek dźwięku zapisanych w tabelach.\\
+
+
+• Synteza Fizyczna (Physical Modeling):
+Symuluje zachowanie fizycznych instrumentów muzycznych przez matematyczne modele ich akustyki.
+Generuje dźwięk, opierając się na równaniach, które opisują zachowanie instrumentów.\\
+
+
+
+• Synteza Formantowa:
+Opiera się na modelowaniu rezonansowych częstotliwości w ludzkim aparacie głosowym.
+Generuje dźwięk poprzez manipulację rezonansami, imitując brzmienie mowy i ludzkiego głosu.\\
+
+• Synteza Próbkowa:
+Wykorzystuje gotowe cyfrowe próbki dźwiękowe jako podstawę generowania dźwięku.
+Odtwarza zapisane dźwięki instrumentów lub innych źródeł, umożliwiając manipulację parametrów dźwięku.\\
+
+	Każda z powyższych technik syntezy dźwięku oferuje unikalne możliwości generowania różnorodnych brzmień i znalazła zastosowanie w różnych obszarach produkcji muzycznej, eksperymentalnej oraz w inżynierii dźwięku.
+
+
+\section{Transformata Fouriera}
+
+Transformata Fouriera jest narzędziem matematycznym, które umożliwia analizę funkcji czasowej poprzez jej dekompozycję na składowe częstotliwościowe. To narzędzie, które pozwala spojrzeć na sygnał z innej perspektywy, przenosząc go z dziedziny czasu (przestrzeń czasowo-amplitudowa) na dziedzinę częstotliwości (przestrzeń częstotliwościowo-amplitudowa) \cite{fourier_transform_visual}\cite{dsp_understanding}.
+
+\begin{equation}
+F(\omega) = \int_{-\infty}^{\infty} -f(t) e^{-j\omega t} \,dt
+\end{equation}
+gdzie:
+\begin{itemize}
+    \item \(F(\omega)\) jest transformacją Fouriera funkcji \(f(t)\),
+    \item \(\omega\) jest częstotliwością kątową,
+    \item \(j\) jest jednostką urojoną.
+\end{itemize}
+
+Transformata Fouriera posiada wiele ważnych właściwości, które czynią ją niezwykle użyteczną w analizie sygnałów. Niektóre z tych właściwości to:
+Liniowość: Transformata Fouriera jest liniowa, co oznacza, że transformata sumy dwóch sygnałów jest równa sumie transformacji tych sygnałów.
+Przesunięcie czasowe: Przesunięcie sygnału w czasie powoduje zmianę fazy jego transformaty Fouriera, ale nie wpływa na jego amplitudę.
+Przeskalowanie czasowe: Przeskalowanie sygnału w czasie powoduje odwrotne przeskalowanie w dziedzinie częstotliwości.
+Dualność: Transformata Fouriera samej transformaty Fouriera sygnału daje sygnał zbliżony do oryginalnego odwróconego w czasie.
+Transformata Fouriera jest niezwykle użyteczna w analizie sygnałów, ponieważ pozwala na rozłożenie złożonego sygnału na prostsze składniki, które są łatwiejsze do analizy. Na przykład, sygnał muzyczny może być rozłożony na składniki harmoniczne, które odpowiadają różnym dźwiękom instrumentów muzycznych. Analiza Fouriera to niezastąpione narzędzie zarówno w badaniach naukowych, jak i praktycznych zastosowaniach w dziedzinie dźwięku i syntezy.
+\newpage
+\subsection{Szybka Transformata Fouriera - FFT}
+Szybka Transformata Fouriera to algorytm o niskiej złożoności obliczeniowej, służący do obliczania dyskretnej transformaty Fouriera DFT dla sekwencji N punktów w czasie znacznie szybciej niż bezpośrednie obliczenie DFT. Dla sekwencji N punktów, DFT jest zdefiniowana jako:
+
+\begin{equation}
+F(n) = \sum_{k=0}^{N-1} f(k) e^{-j\frac{2\pi}{N}nk}
+\end{equation}
+gdzie:
+\begin{itemize}
+    \item \(F(n)\) jest \(n\)-tym punktem DTF sekwencji \(f(k)\),
+    \item \(k\) jest indeksem punktu w sekwencji,
+    \item \(j\) jest jednostką urojoną,
+    \item \(N\) jest całkowitą liczbą punktów w sekwencji.
+\end{itemize}
+
+FFT redukuje liczbę obliczeń z \(O(N^2)\) do \(O(N \log N)\) wykorzystując symetrię i okresowość DFT, co jest znacznym ulepszeniem.
+Najpopularniejszym algorytmem FFT jest algorytm Cooley-Tukey. Jest to algorytm typu “dziel i zwyciężaj”, który dzieli DFT o rozmiarze N na dwie DFT o rozmiarze N/2, co pozwala na znaczne zredukowanie liczby obliczeń. Algorytm ten jest najefektywniejszy, gdy N jest potęgą liczby 2. FFT znajduje zastosowanie w wielu dziedzinach, takich jak przetwarzanie sygnałów audio i wideo, analiza sejsmiczna, przetwarzanie obrazów, telekomunikacja oraz w naukach fizycznych i inżynierskich. Umożliwia szybką konwolucję, filtrację sygnałów, analizę widmową oraz przetwarzanie sygnałów w czasie rzeczywistym. FFT jest niezbędnym narzędziem w pracy inżynierskiej, umożliwiającym efektywne przetwarzanie sygnałów i analizę danych. Zrozumienie i zastosowanie FFT pozwala na znaczące przyspieszenie obliczeń i jest kluczowe w wielu nowoczesnych technologiach.
+
+\subsection{STFT}
+
+Użycie STFT (Short-Time Fourier Transform) polega na analizie sygnału dźwiękowego w krótkich oknach czasowych, co pozwala na badanie zmian widma częstotliwościowego sygnału w czasie. Sygnał dźwiękowy jest dzielony na krótkie fragmenty, zwane ramkami, które często nakładają się na siebie. Każda ramka jest analizowana niezależnie od pozostałych. Na każdej ramce czasowej stosuje się transformatę Fouriera, co przekształca sygnał z dziedziny czasu na dziedzinę częstotliwości dla tej konkretnej ramki. Dla każdej ramki otrzymywane jest widmo częstotliwościowe, pokazujące składowe częstotliwościowe sygnału w tym konkretnym fragmencie czasu. STFT umożliwia analizę ewolucji widma częstotliwościowego w funkcji czasu. Dzięki analizie kolejnych ram czasowych można śledzić zmiany częstotliwości w sygnale w zależności od czasu.\\
+
+\textbf{Zastosowania STFT}
+
+• Spektrogramy: STFT jest podstawą do tworzenia spektrogramów, czyli graficznych reprezentacji zmian widma częstotliwościowego w czasie.
+
+• Analiza sygnału: Pozwala na identyfikację zmian w zawartości częstotliwościowej sygnału w różnych momentach czasowych.
+
+• Transpozycja dźwięku: Umożliwia zmianę wysokości tonu w utworach muzycznych poprzez manipulację ramkami czasowymi.\\
+
+STFT jest ważnym narzędziem w analizie sygnału dźwiękowego, pozwalającym na szczegółową analizę zmian widma częstotliwościowego w zależności od czasu, co ma zastosowanie w wielu dziedzinach, od analizy dźwięku po inżynierię dźwięku i przetwarzanie sygnałów.
+
+\section{Formaty plików dźwiękowych}
+
+\noindent\textbf{MP3 (MPEG-1 Audio Layer III)}
+
+MP3 jest formatem kompresji stratnej, redukującym rozmiar pliku poprzez usuwanie danych nieistotnych dla ludzkiego ucha. Przechowuje dźwięk w formie skompresowanej, usuwając pewne elementy, co prowadzi do utraty niektórych detali audio. Powszechnie wykorzystywany do przechowywania muzyki w plikach cyfrowych o mniejszym rozmiarze. Format MP3 jest najczęściej spotykanym formatem audio ze względu na jego kompaktowość.\\
+
+\noindent\textbf{WAV (Waveform Audio File Format)}
+
+WAV to format bezstratnej kompresji, przechowujący dźwięk w postaci nieskompresowanej, zachowującej wszystkie dane audio. Ze względu na brak kompresji, pliki WAV są większe, ale oferują pełniejszą jakość dźwięku. Wykorzystywany w profesjonalnych aplikacjach audio, edycji dźwięku i produkcji muzycznej. Przechowuje surowe dane audio w postaci PCM (Pulse Code Modulation).\\
+
+\noindent\textbf{MIDI (Musical Instrument Digital Interface)}
+
+Pliki midi nie przechowują jako takiego dźwięku, lecz sekwencje poleceń sterujących instrumentami muzycznymi. Posiada uniwersalny format, używany do komunikacji między urządzeniami muzycznymi, oprogramowaniem i kontrolerami. Pliki midi są niewielkie, ponieważ przechowują informacje o sekwencji poleceń, nie zawierając dźwięku. Stosowany do zapisu nut, długości dźwięków, informacji o instrumentach i innych komend muzycznych.
+
+\section{Techniki konwersji audio do formatu midi}
+
+Konwersja audio do plików midi to proces wydobycia informacji dotyczących nut: ich długości, głośności, tonie, położeniu w czasie i innych właściwości muzycznych z nagrania dźwiękowego. Istnieje kilka technik stosowanych do tego celu, chociaż żadna nie jest perfekcyjna ze względu na złożoność ludzkiego odbioru dźwięku i różnice między dźwiękiem rzeczywistym a informacją midi. Rozpoznanie tonu polega na wykrywaniu na podstawie dominujących częstotliwości i porównywanie ich z częstotliwościami przypisanymi do konkretnych tonów (Tab. 2.1). Długość i położenie w czasie może zostać wykryte za pomocą algorytmów wykrywania ataków. Pomagają one w identyfikacji momentów, w których dźwięki zaczynają się i kończą, a to pozwala również to na określenie długości nut. Natomiast głośność jest zależna od amplitudy.

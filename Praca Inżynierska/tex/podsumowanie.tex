@@ -1,0 +1,23 @@
+\chapter{Podsumowanie}
+\vspace{-25pt}
+
+\section{Osiągnięte cele}
+
+Udało się stworzyć funkcjonalną grę zintegrowaną z elektronicznym instrumentem klawiszowym wyświetlającą synthesie z własnoręcznie wybranego pliku muzycznego, która realnie pozwala na naukę gry na instrumencie klawiszowym oraz na rywalizację polegającej na zdobyciu jak największej ilości punktów. Natomiast konwersja z formatu mp3 na format midi potrzebny do wyświetlenia synthesii piosenki powiodła się, niemniej jednak zbyt mało dokładnie, aby była funkcjonalna na tyle na ile zakładano na początku projektu.
+
+\section{Wnioski}
+
+Transformata Fouriera okazała się być niewystarczającym narzędziem, aby w pełni odtworzyć sekwencję muzyczną, z której powstał dany utwór. Jednakże jest narzędziem koniecznym przy przetwarzaniu sygnałów dźwiękowych, ponieważ większość dźwięków była poprawnie rozpoznawana oraz bardzo dokładne zostawał wyznaczany czas ich rozpoczęcia. 
+
+\section{Możliwe korekty i ulepszenia}
+
+Algorytm mógłby zostać poprawiony wraz z użyciem dodatkowych narzędzi takich jak uczenie maszynowe, mogłoby pomóc w klasyfikacji głównych dźwięków, z których składa się piosenka oraz składowych harmonicznych.
+Natomiast wyświetlanie synthesii mogłoby zostać poprawione używajac języka kompilowanego zamiast interpretowanego, co pozwoliłoby na zoptymalizowanie działania funkcji wyświetlającej sekwencje muzyczną.
+
+\section{Wskazanie dalszych kierunków rozwoju projektu}
+
+Problem składowych harmonicznych oraz doboru progu wykrywania tonów mógłby zostać rozwiązany przy użyciu uczenia maszynowego. Ze względu na zróżnicowaną barwę dźwięku każdego instrumentu, byłaby możliwość podzielenia na każdy z osobna. Na podstawie plików midi i różnych metod syntezy dźwięku można wytrenować model, klasyfikujący dźwięk do odpowiedniego tonu. Następnie wykorzystać go do wcześniej podzielonych części audio posiadających jednolitą barwę, w celu rozpoznania początkowej sekwencji muzycznej.
+
+Po uzyskaniu w pełni poprawnej detekcji projekt mógłby zostać uzupełniony o przetwarzanie na bieżąco gry użytkownika poprzez mikrofon zamiast bezpośredniego łącza i detekcję granych tonów. To otworzyłoby drzwi na możliwość stworzenia części z użyciem innego instrumentu niż klawiszowy.
+
+Kolejnym krokiem byłoby dodanie różnych funkcjonalności do gry takie jak tryb nauki, w którym jest możliwość zatrzymania się w każdym momencie, możliwość zapisu własnej gry i porównanie do wzorcowej piosenki oraz zmiany kosmetyczne w celu odświeżenia szaty graficznej.
