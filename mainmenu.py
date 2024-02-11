@@ -4,7 +4,7 @@ from pygame_menu import themes
 import threading
 import tkinter as tk
 from tkinter import filedialog
-import grafika
+import graphic
 
 pygame.init()
 display_info = pygame.display.Info()
@@ -22,7 +22,7 @@ def main():
         DIFF = difficulty
 
     def synthesia(path):  # start graphic
-        begin = grafika.Graphic(SIZE, path, player.get_value())
+        begin = graphic.Graphic(SIZE, path, player.get_value())
         thread = threading.Thread(target=begin.run())
         thread.start()
         thread.join()
