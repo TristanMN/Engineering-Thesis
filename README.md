@@ -4,16 +4,16 @@ through displayed synthesia from a selected music file. Points are scored during
 allowing for competition. In addition to creating a functional game, this work is intended to convert a chosen song into MIDI format,
 involving the detection and classification of tones using Fourier transform.
 
-The project description is available in a PDF file.
+## The project description is available in a PDF file. ##
 
 
-To implement:
+### To implement: ###
 Come back and use machine learning
 Delay of showing last key in group
 Optimization of graphic
 Automation of taking method to convert song
 
-Concepts:
+### Concepts: ###
 Config file saving last player and his settings
 Learning mode
 Pretty background with working piano
