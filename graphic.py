@@ -4,7 +4,7 @@ import pygame.locals
 import numpy as np
 import threading
 import openmidi
-import fouriertry
+import fourier
 import os
 
 # colors
@@ -63,10 +63,10 @@ class Graphic(object):
         # checking the need for convert by Fourier transform
         if file_extension in ['mp3', 'wav', 'flac', 'ogg', 'aac', 'wma', 'aiff', 'alac', 'dsd', 'ac3', 'amr', 'au',
                               'm4a', 'opus']:
-            thread = threading.Thread(target=fouriertry.main(self.file_path))
+            thread = threading.Thread(target=fourier.main(self.file_path))
             thread.start()
             thread.join()
-            midifile = fouriertry.file
+            midifile = fourier.file
 
         elif file_extension == "midi":
             midifile = self.file_path
