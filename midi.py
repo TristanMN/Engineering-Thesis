@@ -11,6 +11,7 @@ def main():
     print("MIDI Input Devices:")
     input_device_id = None
 
+    # finding the connected device
     for i in range(pygame.midi.get_count()):
         device_info = pygame.midi.get_device_info(i)
         print(device_info)
@@ -24,24 +25,28 @@ def main():
         print(f"Receiving MIDI input from {pygame.midi.get_device_info(input_device_id)[1].decode()}")
         try:
             tons = ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"]
-            times_matrix = np.zeros((len(tons),10))
+            times_matrix = np.zeros((len(tons), 10))
             time = pygame.time.get_ticks()
-#            while True:
-            while time < 235*1000:
-                time = pygame.time.get_ticks()
+
+            while time < 30 * 1000:  # time of recording
+                time = int(pygame.time.get_ticks() * 24 / 25)  # convert shift time
                 if midi_input.poll():
                     midi_events = midi_input.read(10)
                     note = midi_events[0][0][1]
                     ampli = midi_events[0][0][2]
-                    #time = midi_events[0][1]
-
+                    timen = midi_events[0][1]
+                    print(time, timen)
                     if ampli > 0:
                         song.append(('note_on', midi_events[0][0][0], note, ampli, time))
-#                        print(tons[note%12],int((note - note%12)/12), "Start")
-                        times_matrix[int(note%12)][int((note - note%12)/12)] = time
+                        # print(tons[note%12],int((note - note%12)/12), "Start")
+                        times_matrix[int(note % 12)][int((note - note % 12) / 12)] = time
+                        print(tons[note % 12], int((note - note % 12) / 12), time, note,
+                              "          ___________________")
                     if ampli == 0:
                         song.append(('note_off', midi_events[0][0][0], note, ampli, time))
-                        print(tons[note%12],int((note - note%12)/12), "Stop", int(time - times_matrix[int(note%12)][int((note - note%12)/12)]),"ms", time, note)
+                        print(tons[note % 12], int((note - note % 12) / 12),
+                              int(time - times_matrix[int(note % 12)][int((note - note % 12) / 12)]), "ms", time, note,
+                              "   |||||||||||||||||||")
         except KeyboardInterrupt:
             pass
     else:
@@ -49,4 +54,4 @@ def main():
     pygame.midi.quit()
     return song
 
-#main()
+# main()

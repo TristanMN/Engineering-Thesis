@@ -1,2 +1,2 @@
 # Engineering-Thesis
-Implementation of a music game using a keyboard instrument and sound signal analysis
+The project involves the development of a music game integrated with an electronic keyboard instrument, enabling the learning of music through displayed synthesia from a selected music file. Points are scored during the repetition of the displayed key sequences, allowing for competition. In addition to creating a functional game, this work is intended to convert a chosen song into MIDI format, involving the detection and classification of tones using Fourier transform.

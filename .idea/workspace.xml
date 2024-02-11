@@ -35,11 +35,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.midisave">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Studia\PRACA INZYNIERSKA\Engineering-Thesis" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.menutry">
     <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Engineering-Thesis" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -62,7 +68,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="grafika" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="fouriertosavewykreses" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Engineering-Thesis" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -75,7 +81,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/grafika.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fouriertosavewykreses.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -84,7 +90,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="midi" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="fouriertry" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Engineering-Thesis" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -97,7 +103,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/midi.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fouriertry.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -106,7 +112,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="midisave" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="menutry" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Engineering-Thesis" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -119,7 +125,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/midisave.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/menutry.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -174,18 +180,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.Unnamed" />
-      <item itemvalue="Python.midisave" />
+      <item itemvalue="Python.fouriertry" />
       <item itemvalue="Python.miditomp3" />
-      <item itemvalue="Python.grafika" />
       <item itemvalue="Python.spectrummidi" />
-      <item itemvalue="Python.midi" />
+      <item itemvalue="Python.fouriertosavewykreses" />
+      <item itemvalue="Python.menutry" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.midisave" />
-        <item itemvalue="Python.grafika" />
-        <item itemvalue="Python.midi" />
+        <item itemvalue="Python.menutry" />
+        <item itemvalue="Python.fouriertosavewykreses" />
         <item itemvalue="Python.miditomp3" />
+        <item itemvalue="Python.fouriertry" />
         <item itemvalue="Python.spectrummidi" />
       </list>
     </recent_temporary>
@@ -214,6 +220,48 @@
       <workItem from="1700169750795" duration="5381000" />
       <workItem from="1700331049836" duration="4624000" />
       <workItem from="1700402739331" duration="7011000" />
+      <workItem from="1704031024310" duration="1218000" />
+      <workItem from="1704032331440" duration="5571000" />
+      <workItem from="1704037953738" duration="1437000" />
+      <workItem from="1704039642822" duration="4913000" />
+      <workItem from="1704130379006" duration="6147000" />
+      <workItem from="1704210070381" duration="9911000" />
+      <workItem from="1704453436662" duration="8596000" />
+      <workItem from="1704570135869" duration="9299000" />
+      <workItem from="1704635727689" duration="7229000" />
+      <workItem from="1704646413813" duration="24486000" />
+      <workItem from="1704741322202" duration="1169000" />
+      <workItem from="1704826186197" duration="10256000" />
+      <workItem from="1704892556327" duration="8713000" />
+      <workItem from="1704919146767" duration="1584000" />
+      <workItem from="1704939610817" duration="2254000" />
+      <workItem from="1704982639621" duration="4398000" />
+      <workItem from="1705013705037" duration="2899000" />
+      <workItem from="1705249259712" duration="716000" />
+      <workItem from="1705441736511" duration="1635000" />
+      <workItem from="1705517181998" duration="16836000" />
+      <workItem from="1705571112289" duration="13528000" />
+      <workItem from="1705778758776" duration="324000" />
+      <workItem from="1705838108877" duration="9570000" />
+      <workItem from="1705914483482" duration="9230000" />
+      <workItem from="1705946233353" duration="17691000" />
+      <workItem from="1706005671054" duration="4257000" />
+      <workItem from="1706043538123" duration="7245000" />
+      <workItem from="1706096731757" duration="5696000" />
+      <workItem from="1706130247302" duration="46123000" />
+      <workItem from="1706266271024" duration="19213000" />
+      <workItem from="1706357401227" duration="655000" />
+      <workItem from="1706464162970" duration="4759000" />
+      <workItem from="1706473122717" duration="12941000" />
+      <workItem from="1706486481851" duration="2009000" />
+      <workItem from="1706516815183" duration="9117000" />
+      <workItem from="1706529934984" duration="110000" />
+      <workItem from="1706530058271" duration="1277000" />
+      <workItem from="1706727748874" duration="9387000" />
+      <workItem from="1706906804165" duration="225000" />
+      <workItem from="1707141022732" duration="708000" />
+      <workItem from="1707520114872" duration="5258000" />
+      <workItem from="1707608952350" duration="378000" />
     </task>
     <servers />
   </component>
@@ -230,31 +278,57 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="dBthreshold" language="Python" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/fouriertry_py$wykresy.coverage" NAME="wykresy Coverage Results" MODIFIED="1706228223392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/testy_py$wykresy3d__1_.coverage" NAME="wykresy3d (1) Coverage Results" MODIFIED="1706468643313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="H:/PRACA INZYNIERSKA/Engineering-Thesis" />
+    <SUITE FILE_PATH="coverage/testy_py$wykresy3d.coverage" NAME="wykresy3d Coverage Results" MODIFIED="1706520032001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Falka_py$midisave.coverage" NAME="midisave Coverage Results" MODIFIED="1699743036274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/spectrummidi_py$spectrummidi.coverage" NAME="spectrummidi Coverage Results" MODIFIED="1700012974655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/fouriertry_py$spectrummidi.coverage" NAME="spectrummidi Coverage Results" MODIFIED="1700404198762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fouriertry_py$main.coverage" NAME="main Coverage Results" MODIFIED="1704662086850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fouriertry_py$spectrummidi.coverage" NAME="spectrummidi Coverage Results" MODIFIED="1705531512478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fouriertry_py$Falka.coverage" NAME="Falka Coverage Results" MODIFIED="1699668229882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/spectrummidi_py$fouriertry.coverage" NAME="fouriertry Coverage Results" MODIFIED="1700163900113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/midisave_py$miditomp3.coverage" NAME="miditomp3 Coverage Results" MODIFIED="1700356660905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/testy_py$miditomp3.coverage" NAME="miditomp3 Coverage Results" MODIFIED="1706524117393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/grafika_py$miditake.coverage" NAME="miditake Coverage Results" MODIFIED="1699572166867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/spectrummidi_py$miditomp3.coverage" NAME="miditomp3 Coverage Results" MODIFIED="1700013235073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Falka_py$miditomp3.coverage" NAME="miditomp3 Coverage Results" MODIFIED="1699743094312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fouriertry_py$fouriertosavewykreses.coverage" NAME="fouriertosavewykreses Coverage Results" MODIFIED="1706242036117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/testy_py$test10.coverage" NAME="test10 Coverage Results" MODIFIED="1706464309376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/grafika_py$midisave.coverage" NAME="midisave Coverage Results" MODIFIED="1700069780753" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/midisave_py$spectrummidi.coverage" NAME="spectrummidi Coverage Results" MODIFIED="1700356538084" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/fouriertry_py$miditomp3.coverage" NAME="miditomp3 Coverage Results" MODIFIED="1700404244231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/spectrummidi_py$grafika.coverage" NAME="grafika Coverage Results" MODIFIED="1700009402469" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/grafika_py$menutry.coverage" NAME="menutry Coverage Results" MODIFIED="1707520121885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fouriertry_py$wykresy3d.coverage" NAME="wykresy3d Coverage Results" MODIFIED="1706302479839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/midisave_py$grafika.coverage" NAME="grafika Coverage Results" MODIFIED="1700171175326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/midisave_py$fouriertry.coverage" NAME="fouriertry Coverage Results" MODIFIED="1700356354779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/fouriertry_py$midi.coverage" NAME="midi Coverage Results" MODIFIED="1700431108404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fouriertry_py$midi.coverage" NAME="midi Coverage Results" MODIFIED="1704991027470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/grafika_py$fouriertry.coverage" NAME="fouriertry Coverage Results" MODIFIED="1700069252167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/fouriertry_py$midisave.coverage" NAME="midisave Coverage Results" MODIFIED="1700431638707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/testy_py$fouriertry.coverage" NAME="fouriertry Coverage Results" MODIFIED="1706524056687" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Falka_py$Falka.coverage" NAME="Falka Coverage Results" MODIFIED="1699733865756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fouriertry_py$menutry__1_.coverage" NAME="menutry (1) Coverage Results" MODIFIED="1704827813433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../inż" />
+    <SUITE FILE_PATH="coverage/Falka_py$fouriertry.coverage" NAME="fouriertry Coverage Results" MODIFIED="1699749282629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fouriertry_py$grafika.coverage" NAME="grafika Coverage Results" MODIFIED="1706098646288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fouriertry_py$filtracja.coverage" NAME="filtracja Coverage Results" MODIFIED="1705525938730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fouriertry_py$openmidi.coverage" NAME="openmidi Coverage Results" MODIFIED="1704496899301" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/midisave_py$miditomp3.coverage" NAME="miditomp3 Coverage Results" MODIFIED="1700356660905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/spectrummidi_py$miditomp3.coverage" NAME="miditomp3 Coverage Results" MODIFIED="1700013235073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Falka_py$miditomp3.coverage" NAME="miditomp3 Coverage Results" MODIFIED="1699743094312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/testy_py$fouriertosavewykreses.coverage" NAME="fouriertosavewykreses Coverage Results" MODIFIED="1706526135781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/testy_py$spectrummidi.coverage" NAME="spectrummidi Coverage Results" MODIFIED="1706524051376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fouriertry_py$menutry.coverage" NAME="menutry Coverage Results" MODIFIED="1705537532123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fouriertry_py$miditomp3.coverage" NAME="miditomp3 Coverage Results" MODIFIED="1706316896779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/testy_py$zapispunktow.coverage" NAME="zapispunktow Coverage Results" MODIFIED="1706475593555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/testy_py$menutry.coverage" NAME="menutry Coverage Results" MODIFIED="1706473272364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="H:/PRACA INZYNIERSKA/Engineering-Thesis" />
+    <SUITE FILE_PATH="coverage/fouriertry_py$testy.coverage" NAME="testy Coverage Results" MODIFIED="1706161493286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/testy_py$menutry__1_.coverage" NAME="menutry (1) Coverage Results" MODIFIED="1706516826665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fouriertry_py$midisave.coverage" NAME="midisave Coverage Results" MODIFIED="1706134313048" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/grafika_py$grafika.coverage" NAME="grafika Coverage Results" MODIFIED="1699925455231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/midisave_py$midisave.coverage" NAME="midisave Coverage Results" MODIFIED="1700332095714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Falka_py$Falka.coverage" NAME="Falka Coverage Results" MODIFIED="1699733865756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/fouriertry_py$fouriertry.coverage" NAME="fouriertry Coverage Results" MODIFIED="1700402960484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Falka_py$fouriertry.coverage" NAME="fouriertry Coverage Results" MODIFIED="1699749282629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/fouriertry_py$grafika.coverage" NAME="grafika Coverage Results" MODIFIED="1700431581337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fouriertry_py$graphic.coverage" NAME="graphic Coverage Results" MODIFIED="1704037142813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fouriertry_py$fouriertry.coverage" NAME="fouriertry Coverage Results" MODIFIED="1706316665435" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
