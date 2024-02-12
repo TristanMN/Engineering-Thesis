@@ -8,19 +8,19 @@ involving the detection and classification of tones using Fourier transform.
 
 
 ### To implement: ###
-Come back and use machine learning
-Delay of showing last key in group
-Optimization of graphic
-Automation of taking method to convert song
+Come back and use machine learning\
+Delay of showing last key in group\
+Optimization of graphic\
+Automation of taking method to convert song\
 
 ### Concepts: ###
-Config file saving last player and his settings
-Learning mode
-Pretty background with working piano
-Button to changing speed of synthesia
-Personalize colors
-Personalize background
-More graphics
-Saving the playing of player and comprasion it with original synthesia song
-Taking sound signal by microphone and make program working without audio interface
-Graphic and convert methods to other instruments
+Config file saving last player and his settings\
+Learning mode\
+Pretty background with working piano\
+Button to changing speed of synthesia\
+Personalize colors\
+Personalize background\
+More graphics\
+Saving the playing of player and comprasion it with original synthesia song\
+Taking sound signal by microphone and make program working without audio interface\
+Graphic and convert methods to other instruments\
